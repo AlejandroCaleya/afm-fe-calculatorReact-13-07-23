@@ -24,6 +24,19 @@ const Main = () => {
 		setInputValue(inputValue + number);
 	};
 
+	const cuadrado = () => {
+		setInputValue(inputValue ** 2);
+	};
+	const cubo = () => {
+		setInputValue(inputValue ** 3);
+	};
+	const pi = () => {
+		setInputValue(3.14596);
+	};
+	const raiz = () => {
+		setInputValue(inputValue ** 0.5);
+	};
+
 	const igual = () => {
 		try {
 			const result = eval(inputValue);
@@ -144,6 +157,28 @@ const Main = () => {
 					<td>
 						<button className="acentButton" onClick={igual}>
 							=
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button class="acentButton" onClick={cuadrado}>
+							x²
+						</button>
+					</td>
+					<td>
+						<button class="acentButton" onClick={cubo}>
+							x³
+						</button>
+					</td>
+					<td>
+						<button class="acentButton" onClick={pi}>
+							PI
+						</button>
+					</td>
+					<td>
+						<button class="acentButton" onClick={raiz}>
+							√
 						</button>
 					</td>
 				</tr>
